@@ -1,0 +1,87 @@
+body{
+    background-image: url(musicbackground.jpg);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%
+    auto 50%
+  }
+  .type1{
+     width: 20%;
+     display: block;
+     margin: 0px auto;
+  }*/
+  .type2{
+       width: 30%;
+       position: absolute;
+       top: 50%;
+  }*/
+  .bodycen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e5e5e5;
+  }
+  .link{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:  9px 9px 18px #bebebe,
+              -9px -9px 18px #fff;
+    position: relative;
+    overflow: hidden;
+    line-height: 90px;
+    font-size: 30px;
+    transition: .8s;
+    text-align: center;
+    padding: 5.5px;
+  }
+  .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #e5e5e5;
+  }
+  .yt{color: #ff0000}
+  .fb{color: #4267b2}
+  .ig{color: #e949a3}
+  .git{color: #fdfafa}
+  .tweet{color: #1da1f2}
+  .threads{color: #eeeeee}
+  .tiktok{color:#e5e5e5}
+  .pinterest{color:#f5f5f5}
+  .ko-fi{color: rgb(255, 255, 255);}
+  .yt:hover, .fb:hover, .ig:hover, .git:hover, .tweet:hover, .threads:hover, .tiktok:hover, .pinterest:hover, .ko-fi:hover{
+    color: #f8f3f3
+  }
+  .link::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .8s;
+    border-radius: 0 0 50% 50%;
+  }
+  .yt::before{background: #ff0000}
+  .fb::before{background: #4267b2}
+  .ig::before{background: #e949a3}
+  .git::before{background: #222}
+  .tweet::before{background: #1da1f2}
+  .threads::before{background: #eeeeee}
+  .tiktok::before{background: #382e2e}
+  .pinterest::before{background: #302f2f}
+  .ko-fi::before{background: #070707;}
+  .yt:hover::before, .fb:hover::before, .ig:hover::before, .git:hover::before, .tweet:hover::before, .threads:hover::before, .tiktok:hover::before, .pinterest:hover::before, .ko-fi:hover::before{
+    height: 180%;
+  }
